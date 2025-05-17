@@ -163,7 +163,7 @@
       <% for (int i = 1; i <= 24; i++) { %>
         <a href="#" class="keyword-box">키워드 <%=i%></a>
       <% } %>
-    </div>
+    </div> 
 
     <!-- 탭: 새로 나온 책 / 베스트셀러 -->
     <div class="mt-5 d-flex gap-2">
@@ -194,7 +194,7 @@
       <div id="cat-cat<%=i%>" class="book-grid <%= (i == 0 ? "active" : "") %>">
         <% for (int j = 1; j <= 10; j++) { %>
           <div class="book-card">
-            <a href="#"><img src="img/책표지1.jpg" alt="book"></a>
+            <a href="#"><img src="img/표지1.jpg" alt="book"></a>
             <a href="#" class="book-title">키워드 <%= categories[i] %> 도서 <%=j%></a>
             <div class="book-author">작가 이름</div>
             <div class="book-price">₩<%= 10000 + j * 1000 %></div>
@@ -207,7 +207,7 @@
     <div id="cat-best-week" class="book-grid">
       <% for (int i = 1; i <= 10; i++) { %>
         <div class="book-card">
-          <a href="#"><img src="img/책표지1.jpg" alt="book"></a>
+          <a href="#"><img src="img/표지1.jpg" alt="book"></a>
           <a href="#" class="book-title">[주간] 도서 <%=i%></a>
           <div class="book-author">작가 이름</div>
           <div class="book-price">₩<%= 10000 + i * 1000 %></div>
@@ -219,7 +219,7 @@
     <div id="cat-best-month" class="book-grid">
       <% for (int i = 11; i <= 20; i++) { %>
         <div class="book-card">
-          <a href="#"><img src="img/책표지1.jpg" alt="book"></a>
+          <a href="#"><img src="img/표지1.jpg" alt="book"></a>
           <a href="#" class="book-title">[월간] 도서 <%=i%></a>
           <div class="book-author">작가 이름</div>
           <div class="book-price">₩<%= 10000 + i * 1000 %></div>
